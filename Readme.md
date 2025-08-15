@@ -1,7 +1,9 @@
 # Backend Practice
+
 _Learn the backend development with *express.js* and *mongodb*._
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
@@ -23,11 +25,13 @@ npm run dev
 
 ### Dependencies
 
-- [**express.js**](https://expressjs.com/)
-- [**mongodb**](https://www.mongodb.com/)
-- [**dotenv**](https://www.npmjs.com/package/dotenv)
-- [**nodemon**](https://www.npmjs.com/package/nodemon)
-- [**morgan**](https://www.npmjs.com/package/morgan) _for getting request logs_
+- [**express.js**](https://expressjs.com/) [for creating api]
+- [**mongodb**](https://www.mongodb.com/) [for database]
+- [**dotenv**](https://www.npmjs.com/package/dotenv) [for environment variables]
+- [**nodemon**](https://www.npmjs.com/package/nodemon) [for auto restart server]
+- [**morgan**](https://www.npmjs.com/package/morgan) [for getting All the request logs]
+- [**mongoose**](https://mongoosejs.com/) [for Object Data Modeling (ODM) library for MongoDB and Node.js]
+- [**prisma**](https://www.prisma.io/) [for database-agnostic, type-safe database toolkit for Node.js and TypeScript]
 
 ### API Endpoints
 
@@ -45,7 +49,6 @@ Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTIN
 
 This project is licensed under the [MIT License](LICENSE).
 
-
 ## Author
 
 - [**Prabhat kumar**](https://github.com/Prabhat-022)
@@ -53,5 +56,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 - [**Prabhat kumar**](https://github.com/Prabhat-022)
-
-

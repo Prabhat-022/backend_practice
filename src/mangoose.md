@@ -1,5 +1,9 @@
 #Mangoose
 
+Mangoose is a Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a straight-forward, schema-based solution to model your application data.
+
+prisma is a database-agnostic, type-safe database toolkit for Node.js and TypeScript. it is also the ORM for mongodb.
+
 ## Installation
 
 ```bash
@@ -17,22 +21,30 @@ mongoose.connect("mongodb://localhost:27017/myapp", {
 });
 ```
 
-## Models
+## Models [for creating documents]
 
 ```javascript
 const User = mongoose.model("User", {
   name: String,
   age: Number,
+}); 
+```
+## Schema [for defining the structure of documents]
+
+```javascript
+const UserSchema = new mongoose.Schema({
+  name: String,
+  age: Number,
 });
 ```
 
-## Queries
+## Queries [for fetching documents]
 
 ```javascript
 const users = await User.find();
 ```
 
-## Middleware
+## Middleware [for modifying documents]
 
 ```javascript
 User.pre("save", function (next) {
@@ -41,7 +53,7 @@ User.pre("save", function (next) {
 });
 ```
 
-## Validation
+## Validation [for validating documents]
 
 ```javascript
 UserSchema.validate(function (v) {
@@ -52,13 +64,13 @@ UserSchema.validate(function (v) {
 });
 ```
 
-## select
+## select [for including or excluding fields]
 
 ```javascript
 const users = await User.find().select("name age");
 ```
 
-## insertMany
+## insertMany [for inserting multiple documents]
 
 ```javascript
 const users = await User.insertMany([
