@@ -32,6 +32,7 @@ npm run dev
 - [**morgan**](https://www.npmjs.com/package/morgan) [for getting All the request logs]
 - [**mongoose**](https://mongoosejs.com/) [for Object Data Modeling (ODM) library for MongoDB and Node.js]
 - [**prisma**](https://www.prisma.io/) [for database-agnostic, type-safe database toolkit for Node.js and TypeScript]
+- [**express-rate-limit**](https://www.npmjs.com/package/express-rate-limit) [for rate limiting]
 
 ### API Endpoints
 
